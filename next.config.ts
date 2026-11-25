@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Auth + cookie-backed pages: keep Cache Components off for a predictable MVP.
   turbopack: {
     rules: {
       "*.css": {
